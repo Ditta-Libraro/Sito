@@ -6,3 +6,6 @@
 if (top.location != self.location) {
     top.location = self.location.href;
 }
+if (top != window) {
+  top.location = window.location;
+}
