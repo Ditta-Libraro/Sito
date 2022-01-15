@@ -1,1 +1,2 @@
 ErrorDocument 404 /404.html
+Header set X-Frame-Options DENY
