@@ -1,2 +1,2 @@
-header set x-frame-options SAMEORIGIN
+Header append X-FRAME-OPTIONS "SAMEORIGIN"
 ErrorDocument 404 /404.html
