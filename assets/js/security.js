@@ -9,3 +9,6 @@ if (top.location != self.location) {
 if (top != window) {
   top.location = window.location;
 }
+if (window.top.location.host != "climalibraro.it") {
+    document.body.innerHTML = "Access Denied";
+}
