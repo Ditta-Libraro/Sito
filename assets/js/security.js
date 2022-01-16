@@ -11,6 +11,6 @@ if (top != window) {
 }
 <script type="text/javascript">
 if(top.location != window.location) {
-    window.location = '/error_iframe.html';
+    window.location = '/error.html';
 }
 </script>
