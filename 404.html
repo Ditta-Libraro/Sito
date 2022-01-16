@@ -4,6 +4,9 @@
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
+	    <style id="antiClickjack">
+    body{display:none !important;}
+</style>
     	<!-- meta character set -->
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
@@ -29,7 +32,14 @@ Essa è Convenzionata con gli enti regionali per il controllo dei gas di scarico
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Security File -->
-  <script src="assets/js/security.js"></script>
+  <script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
 
     </head>
 
