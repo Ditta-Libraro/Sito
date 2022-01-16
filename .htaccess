@@ -1,2 +1,2 @@
-Header append X-FRAME-OPTIONS "SAMEORIGIN"
+Header set X-Frame-Options DENY
 ErrorDocument 404 /404.html
